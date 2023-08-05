@@ -1,11 +1,11 @@
 
 .bg1{
   background-color: #c3fbac;
-  padding: 40px 80px;
+  padding: 0px 60px;
   box-shadow:  0px 4px 16px rgba(75, 0, 129, 0.26);  
 }
 nav {
-  padding:40px 80px; 
+  padding:20px 60px; 
 }
 
 .nav-container {
@@ -34,7 +34,21 @@ nav {
 .nav-links a:hover {
   color:#eef5f1;
 }
+#banner-img{
+  width: 450px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
 
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
 .heading1{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 16px 48px;
@@ -69,7 +83,9 @@ nav {
 
 .website{
   display:flex;
-  gap : 30%;
+  gap : 70px;
+  align-items: center;
+  justify-content:space-between;
 }
 .mobile1{
   position:absolute;
@@ -92,12 +108,17 @@ nav {
   display:flex;
   gap:50px;
   flex-wrap:wrap;
-  justify-content: space-evenly;
+  justify-content:center;
   align-items: center;
+  padding:30px 0px;
 }
 .card{
   border:none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding:20px 10px;
+  border-radius: 15px;
+  width:30%;
+  
 }
 .btn-green{
   background-color: rgb(87, 255, 168);
@@ -110,20 +131,7 @@ nav {
   flex-direction: column;
   gap:60px;
 }
-.man{
-  position: relative;
-  padding:16px 48px;
-  background-color:white;
-  height:120%;
-  width:16%;
-  box-shadow: 2px 2px 4px lightgrey;
-  border-radius: 10px;
-  left:240px;
-}
-.img1{
-  position:relative;
-  justify-content: center;
-}
+
 .rec{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;;
@@ -145,25 +153,7 @@ nav {
 .LM:hover{
   text-decoration: underline;
 }
-.woman{
-  position: relative;
-  padding:16px 48px;
-  background-color:white;
-  height:120%;
-  width:45%;
-  box-shadow: 2px 2px 4px lightgrey;
-  border-radius: 10px;
-  bottom:90px;
-}
-.elements{
-  position: relative;
-  padding:16px 48px;
-  background-color:white;
-  height:120%;
-  width:45%;
-  box-shadow: 2px 2px 4px lightgrey;
-  border-radius: 10px;
-}
+
 .work{
   background-color: #c3fbac;
   padding: 40px 80px;
@@ -184,7 +174,7 @@ nav {
 }
 .flex{
   display:flex;
-  gap:18%;
+  gap:6%;
   justify-content: center;
   margin-top: 100px;
   align-items: center;
@@ -194,6 +184,8 @@ nav {
   flex-direction: column;
   align-items:center;
   justify-content: center;
+  text-align: center;
+  gap:15px;
 }
 .headf{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -314,7 +306,7 @@ footer{
   background-color:#198754;
 }
 .end{
-  padding:16px 48px;
+  padding: 50px 0px;
   display:flex;
   justify-content:space-evenly;
 }
@@ -380,10 +372,17 @@ footer{
   align-items: center;
   gap:15px;
 }
-.carousel-inner {
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-  justify-content: center;
-  align-self: center;
+.carousel-container{
+  width:70%;
+  margin: 3% auto;
+}
+.car-img
+{
+  height: 600px;
+  object-fit: cover;
+}
+.card-img-top{
+  width:100%;
+  height:150px;
+  object-fit: cover;
 }
